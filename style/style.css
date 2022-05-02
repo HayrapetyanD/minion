@@ -1,0 +1,649 @@
+body {
+    background: rgba(0, 153, 255, 0.705);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    overflow: auto;
+    border: 1px solid black;
+}
+.char_box {
+    width: 50%;
+    height: 75%;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CHAR_BODY___________________________________________________________________________________________________ */
+.char_body {
+    width: 194px;
+    height: 350px;
+}
+.char_body_top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 50% 50% 0 0;
+    background: rgba(250, 216, 21);
+}
+.char_body_bottom {
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 38% 38%;
+    background: rgba(250, 216, 21);
+}
+
+/* CHAR_HAIR _________________________________________________________________________________________________*/
+.char_hair_box {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row
+}
+.char_hair_left_box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.char_hair_rigth_box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.char_left_hair1 {
+    width: 8px;
+    height: 29px;
+    position: relative;
+    left: 2px;
+    top: 6px;
+    border-radius: 0 100%;
+    border-right: 1px solid black;
+}
+.char_left_hair2 {
+    width: 8px;
+    height: 31px;
+    position: relative;
+    left: 2px;
+    top: 4px;
+    border-radius: 0 100%;
+    border-right: 1px solid black;
+}
+.char_left_hair3 {
+    width: 8px;
+    height: 33px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    border-radius: 0 100%;
+    border-right: 1px solid black;
+}
+.char_left_hair4 {
+    width: 8px;
+    height: 35px;
+    position: relative;
+    left: 2px;
+    border-radius: 0 100%;
+    border-right: 1px solid black;
+}
+.char_rigth_hair4 {
+    width: 8px;
+    height: 35;
+    position: relative;
+    left: 2px;
+    border-radius: 100% 0;
+    border-left: 1px solid black;
+}
+.char_rigth_hair3 {
+    width: 8px;
+    height: 33px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    border-radius: 100% 0;
+    border-left: 1px solid black;
+}
+.char_rigth_hair2 {
+    width: 8px;
+    height: 31px;
+    position: relative;
+    left: 2px;
+    top: 4px;
+    border-radius: 100% 0;
+    border-left: 1px solid black;
+}
+.char_rigth_hair1 {
+    width: 8px;
+    height: 29px;
+    position: relative;
+    left: 2px;
+    top: 6px;
+    border-radius: 100% 0;
+    border-left: 1px solid black;
+}
+
+/* CHAR_GLASSES_______________________________________________________________________________________________ */
+.char_glasses {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_glass {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 5px;
+    border-radius: 100%;
+    border: 10px solid rgb(192, 192, 196);
+    z-index: 3;
+}
+.rigth_glass {
+    width: 60px;
+    height: 60px;;
+    position: relative;
+    right: 5px;
+    border-radius: 100%;
+    border: 10px solid rgb(192, 192, 196);
+    z-index: 3;
+}
+.left_glass_part {
+    width: 5px;
+    height: 20px;
+    position: relative;
+    left: 6.5px;
+    background: rgb(192, 192, 196);
+    border-radius: 50% 0 0 50%;
+    z-index: 2;
+}
+.rigth_glass_part {
+    width: 5px;
+    height: 20px;
+    position: relative;
+    right: 6.5px;
+    background: rgb(192, 192, 196);
+    border-radius: 0 50% 50% 0;
+    z-index: 2;
+}
+.left_glass_strap {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    background: rgb(63, 37, 37);
+    border-radius: 30% 0 0 30%;
+    clip-path: polygon(0 10%,100% 0, 100% 100%, 0 90%);
+}
+.rigth_glass_strap {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: 0px;
+    background: rgb(63, 37, 37);
+    border-radius: 0 30% 30% 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+/* CHAR_EYES_________________________________________________________________________________________________ */
+.left_eye_white {
+    width: 60px;
+    height: 54px;
+    position: absolute;
+    top: 3px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+.rigth_eye_white {
+    width: 60px;
+    height: 54px;
+    position: absolute;
+    top: 3px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+.left_eye_brown{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+    border-radius: 100%;
+    background-color: rgba(101, 67, 33, 0.918);
+}
+.rigth_eye_brown{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 20px;
+    left: 11px;
+    border-radius: 100%;
+    background-color: rgba(101, 67, 33, 0.918);
+}
+.left_eye_black {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    background-color: rgba(2, 2, 1, 0.842);
+}
+.rigth_eye_black {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    background-color: rgba(2, 2, 1, 0.842);
+}
+.left_eye_shin {
+    width: 2.5px;
+    height: 2.5px;
+    bottom: 1.5px;
+    left: 7px;
+    position: relative;
+    border-radius: 100%;
+    background-color: white;
+}
+.rigth_eye_shin {
+    width: 2.5px;
+    height: 2.5px;
+    bottom: 1.5px;
+    left: 7px;
+    position: relative;
+    border-radius: 100%;
+    background-color: white;
+}
+
+/* CHAR_SMILE_________________________________________________________________________________________________*/
+.char_smile_box {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char_smile {
+    width: 80px;
+    height: 18px;
+    position: relative;
+    display: block;
+    border-radius: 0 0 80% 80%;
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.712);
+}
+
+/* CHAR_HEANDS________________________________________________________________________________________________*/
+.char_left_heand {
+    width: 30px;
+    height: 200px;
+    position: relative;
+    top: 367px;
+    right: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    transform: rotate(20deg);
+}
+.char_rigth_heand {
+    width: 30px;
+    height: 200px;
+    position: relative;
+    bottom: 178px;
+    left: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    transform: rotate(-20deg);
+}
+.char_left_heand_parts {
+    width: 30px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char_rigth_heand_parts {
+    width: 30px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char_left_heand_top {
+    width: 18px;
+    height: 60px;
+    position: relative;
+    top: 3px;
+    right: -10px;
+    background: rgba(250, 216, 21);
+    border-radius: 20% 20% 5% 0;
+    transform: rotate(15deg);
+}
+.char_rigth_heand_top {
+    width: 18px;
+    height: 60px;
+    position: relative;
+    top: 3px;
+    left: -10px;
+    background: rgba(250, 216, 21);
+    border-radius: 20% 20% 5% 0%;
+    transform: rotate(-15deg);
+}
+.char_left_heand_bottom {
+    width: 18px;
+    height: 50px;
+    position: relative;
+    left: 2.8px;
+    bottom: 1px;
+    background: rgba(250, 216, 21);
+    border-radius: 0 0 25% 25% ;
+}
+.char_rigth_heand_bottom {
+    width: 18px;
+    height: 50px;
+    position: relative;
+    right: 2.8px;
+    bottom: 1px;
+    background: rgba(250, 216, 21);
+    border-radius: 0 0 25% 25% ;
+}
+.char_left_hand_glove {
+    width: 50px;
+    height: 65px;
+    position: relative;
+    left: 2.8px;
+    bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char_rigth_hand_glove {
+    width: 50px;
+    height: 65px;
+    position: relative;
+    right: 2.8px;
+    bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.char_left_hand_box {
+    width: 18px;
+    height: 15px;
+    border-radius: 20%;
+    position: relative;
+    background: black; 
+}
+.char_rigth_hand_box {
+    width: 18px;
+    height: 15px;
+    border-radius: 20%;
+    position: relative;
+    background: black; 
+}
+.char_left_hand_circle1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 1px;
+    background: black;  
+}
+.char_left_hand_circle2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 20px;
+    left: 8px;
+    background: black;  
+}
+.char_left_hand_circle3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 35px;
+    right: 8px;
+    background: black;  
+}
+.char_rigth_hand_circle1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 1px;
+    background: black;  
+}
+.char_rigth_hand_circle2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 20px;
+    left: 8px;
+    background: black;  
+}
+.char_rigth_hand_circle3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 35px;
+    right: 8px;
+    background: black;  
+}
+
+/* CHAR_LEGS__________________________________________________________________________________________________ */
+.char_legs {
+    width: 194px;
+    height: 55px;
+    position: relative;
+    bottom: 205px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.char_left_leg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.char_rigth_leg {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.char_left_pants {
+    width: 45px;
+    height: 35px;
+    position: relative;
+    background: rgb(10, 26, 95);
+    border-bottom: 1.8px dashed rgba(151, 98, 12, 0.829);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 25% 100%);
+}
+.char_rigth_pants {
+    width: 45px;
+    height: 35px;
+    position: relative;
+    background: rgb(10, 26, 95);
+    border-bottom: 1.8px dashed rgba(151, 98, 12, 0.829);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 5% 100%);
+}
+.char_left_shoe {
+    width: 50px;
+    height: 15px;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+    background: black;
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 100%;
+}
+.char_rigth_shoe {
+    width: 50px;
+    height: 15px;
+    position: relative;
+    left: 2px;
+    bottom: 1px;
+    background: black;
+    border-radius: 100% 65% 35% 0% / 0% 100% 0% 100%;
+}
+
+/* CHAR_OVERALLS_______________________________________________________________________________________________ */
+.char_overalls_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.char_overalls_main_circle {
+    width: 136px;
+    height: 14px;
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(250, 216, 21);
+    border-bottom: 1.2px dashed rgba(151, 98, 12, 0.829);
+    z-index: 3;
+}
+.char_overalls_main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: rgb(10, 26, 95);
+    width: 150px;
+    height: 160px;
+    position: relative;
+    top: 11px;
+    border-radius: 0 0 32% 32%;
+    border: 1.8px dashed rgba(151, 98, 12, 0.829);
+    border-top: 2px dashed rgb(10, 26, 95);
+    border-bottom: none;
+    z-index: 2;
+}
+.char_overalls_pocket_circle {
+    width: 60px;
+    height: 7px;
+    position: absolute;
+    top: 28px;
+    left: 45px;
+    border-radius: 100%;
+    background: rgb(10, 26, 95);
+    border-bottom: 1.8px dashed rgba(151, 98, 12, 0.829);
+    z-index: 1;
+}
+.char_overalls_pocket {
+    display: flex;
+    align-self: center;
+    background: rgb(10, 26, 95);
+    background-image: url('../img/gru_logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 60px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 0 0 32% 32%;
+    border: 1.8px dashed rgba(151, 98, 12, 0.829);
+}
+.char_overrals_strap_left { 
+    width: 52px;
+    height: 15px;
+    position: absolute;
+    top: -12px;
+    left: -33px;
+    background: rgb(10, 26, 95);
+    border-radius: 15% 0 0 50%;
+    border: 1.8px dashed rgba(151, 98, 12, 0.829);
+    border-left: none;
+    transform: rotate(35deg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%);
+}
+.char_overrals_strap_right {
+    width: 52px;
+    height: 15px;
+    position: absolute;
+    top: -12px;
+    right: -33px;
+    background: rgb(10, 26, 95);
+    border-radius: 0 15% 50% 0;
+    border: 1.8px dashed rgba(151, 98, 12, 0.829);
+    border-right: none;
+    transform: rotate(-35deg);
+    clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+}
+.char_overalls_button_left {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: 4px solid black;
+}
+.char_overalls_button_rigth {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    top: 2px;
+    right: 2px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: 4px solid black;
+}
+.char_overalls_bottom { 
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-start;
+    background: rgb(10, 26, 95);
+    width: 194px;
+    height: 70px;
+    position: relative;
+    bottom: 56px;
+    border-radius: 0 0 100% 100%;
+    border-bottom: none;
+    z-index: 1;
+}
+.char_overalls_bottom_circle {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: -5.5px;
+    border-radius: 100%;
+    background: rgba(250, 216, 21);
+    border-bottom: 1.2px dashed rgba(151, 98, 12, 0.829);
+}
